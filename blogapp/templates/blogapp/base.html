@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--    template tag-->
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Python Blog 🐍</h1>
+    </header>
+    <main>
+        <!--    template tag-->
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
