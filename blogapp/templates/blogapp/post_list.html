@@ -1,10 +1,13 @@
 {% extends "blogapp/base.html" %}
 
-{% block title %}Python Blog 🐍{% endblock %}
+{% block title %}Django Blog 🐍{% endblock %}
 
 {% block content %}
+    <header>
+        <h1>Blog</h1>
+    </header>
     {% for post in post_list %}
-    <article>
+    <article class="align-center">
         <h2>
             <a href="{{ post.get_absolute_url }}">
                 {{ post.title }}
@@ -16,4 +19,9 @@
         {{ post.body|linebreaks|truncatewords:10 }}
     </article>
     {% endfor %}
+    <div class="align-center">
+        <a href="/blog/contato">
+            contato
+        </a>
+    </div>
 {% endblock %}

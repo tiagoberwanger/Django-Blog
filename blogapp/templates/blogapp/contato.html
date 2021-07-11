@@ -1,0 +1,28 @@
+{% extends "blogapp/base.html" %}
+{% load bootstrap_icons %}
+
+{% block title %}Contato ✉️{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Contato</h1>
+    </header>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/tiago-berwanger/" target="_blank">
+                {% bs_icon 'linkedin' size='2em' color='#0072b1' %}
+        </a>
+        <a href="https://github.com/tiagoberwanger" target="_blank">
+                {% bs_icon 'github' size='2em' color='black' %}
+        </a>
+        <a href="mailto:berwangertiago@gmail.com/" target="_blank">
+                {% bs_icon 'envelope' size='2em' color='red'%}
+        </a>
+    </div>
+    <div class="align-center">
+        <a href="/blog">
+            voltar
+        </a>
+    </div>
+
+
+{% endblock %}

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blogapp.apps.BlogappConfig',
+    'django_bootstrap_icons'
 ]
 
 MIDDLEWARE = [

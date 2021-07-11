@@ -5,12 +5,10 @@
 <head>
     <!--    template tag-->
     <title>{% block title %}{% endblock %}</title>
-    <link href="{% static 'css/blog.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" >
+    <link rel="stylesheet" href="{% static 'bootstrap_icons/css/bootstrap_icons.css' %}">
 </head>
 <body>
-    <header>
-        <h1>Python Blog 🐍</h1>
-    </header>
     <main>
         <!--    template tag-->
         {% block content %}

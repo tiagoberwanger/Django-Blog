@@ -3,6 +3,7 @@
 {% block title %}{{post.title}}{% endblock %}
 
 {% block content %}
+    <div>
         <h2>
             {{ post.title }}
         </h2>
@@ -10,4 +11,5 @@
             Publicado em {{ post.created }} por {{ post.author }}
         </p>
         {{ post.body|linebreaks }}
+    </div>
 {% endblock %}
